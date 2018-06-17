@@ -1,0 +1,13 @@
+---
+  host: all
+  become: all
+  tasks:
+  - name: webserverinstallationonredhatnodes
+    yum:
+      name: httpd
+      state: present
+    when: ansible_os_family =="RedHat"
+
+     
+
+
