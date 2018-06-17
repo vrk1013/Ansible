@@ -1,5 +1,5 @@
 ---
-  host: all
+  hosts: all
   become: all
   tasks:
   - name: webserverinstallationonredhatnodes
