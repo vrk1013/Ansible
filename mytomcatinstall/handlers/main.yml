@@ -1,2 +1,11 @@
 ---
 # handlers file for mytomcatinstall
+ - name: servicestart
+   service:
+    name: tomcat
+    state: started
+
+ - name: servicerestart
+   service:
+    name: tomcat
+    state: restarted

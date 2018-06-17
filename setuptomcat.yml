@@ -1,0 +1,5 @@
+---
+ - hosts: all
+   become: yes
+   roles:
+    - {role: mytomcatinstall , when: ansible_os_family =="RedHat"}
