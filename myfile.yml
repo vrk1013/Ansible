@@ -4,4 +4,4 @@
       path: /home/ansible/Ansible/myfile.txt
       state: touch
       mode: "oug=rwx"
-    when: ansible_os_family =="RedHat"
+    when: ansible_os_family =="Debian"
